@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zero To Startup</title>
+	
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div data-role="page" class="jqm-demos">
+
+	<div data-role="header">
+		<h1>Weekly</h1>
+		<a href="../panel/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content jqm-content jqm-fullwidth">
+		<div data-role="content" id="postlist">
+
+		</div><!-- content -->
+
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<!-- page: blogposts -->
+<section data-role="page" id="blogpost">
+	<div data-role="content">
+		<div id="mypost"></div>
+	</div>
+</section>
+
+	<script src="js/script.js"></script>
+	<script src="http://hzl.ca/webd301_a3/category/weekly-log/?json=1&callback=listPosts"></script>
+
+</body>
+</html>
