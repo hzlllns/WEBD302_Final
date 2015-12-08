@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Zero To Startup</title>
+	<title>Tinker</title>
 	
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -104,15 +104,14 @@
 	<!-- WEEKLY LOG -->
 	<section data-role="page" id="weekly">
 		<!-- navbar -->
-		<header data-role="header" data-position="fixed" data-theme="a">
+		<header data-role="header" data-position="fixed" data-theme="a" data-title="Weekly Log">
 			<a href="#" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
 			<span role="heading" class="ui-title">Weekly Log</span>
 			<a href="#right-panel" data-theme="b" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon ui-btn-right">Menu</a>
 		</header>
 
 		<div role="main" id="overview-content" class="ui-content">
-			<h2>Weekly Log</h2>
-			<p>Blog posts will go here</p>
+			<div data-role="content" id="postlist"></div><!-- content -->
 		</div><!-- /content -->
 
 		<!-- hamburger menu -->
@@ -128,9 +127,25 @@
 		</div>
 	</section><!-- /WEEKLY LOG -->
 
+	<!-- page: blogposts -->
+	<section class="header_default footer_default" data-title="Posts" data-role="page" id="blogpost">
+		<!-- navbar -->
+		<header data-role="header" data-position="fixed" data-theme="a" data-title="Weekly Log">
+			<a href="#" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+			<span role="heading" class="ui-title">Weekly Log</span>
+			<a href="#right-panel" data-theme="b" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon ui-btn-right">Menu</a>
+		</header>
+		
+		<div data-role="content">
+			<div id="mypost"></div>
+		</div><!-- content -->
+	</section><!-- blogposts page -->
+
 	<!-- APIs -->
-	<script src="http://hzl.ca/webd301_a3/category/weekly-log/?json=1&callback=listPosts"></script>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/script.js"></script>
+	<script src="http://hzl.ca/webd301_a3/category/weekly-log/?json=1&callback=callback=listPosts"></script>
+	
+	
 </body>
 </html>

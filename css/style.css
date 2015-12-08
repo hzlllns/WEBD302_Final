@@ -61,6 +61,18 @@ h3 {
 	font-size: 25px;
 }
 
+/* ---- STRUCTURE ---- */
+
+.ui-bar-a {
+	background-color: #225398;
+	color: #fff;
+}
+
+section {
+	padding-top: 50px;
+}
+
+
 /* ---- HOME ---- */
 
 .jqm-demos .jqm-content.jqm-fullwidth {
@@ -68,10 +80,6 @@ h3 {
     padding-left: 15%;
     padding-right: 15%;
     float: none;
-}
-
-section {
-	padding-top: 50px;
 }
 
 #home .ui-controlgroup {
@@ -104,3 +112,15 @@ section {
 	margin: 0;
 	padding:0;
 }
+
+/* ---- WEEKLY LOG ---- */
+
+#postlist .ui-listview li h3 {
+	color: #225398;
+}
+
+
+
+
+
+
