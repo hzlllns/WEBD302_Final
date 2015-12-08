@@ -28,8 +28,8 @@ function listPosts(data) {
 function showPost(id) {
 	$.getJSON('http://hzl.ca/webd301_a3/category/weekly-log/?json=get_post&post_id=' + id + '&callback=?', function(data) {
 		// Changes navbar title to blog post title
-		var output_navbar = '<span role="heading" class="ui-title">' + data.post.title + '</span>';
-		$('#post-header').html(output_navbar);
+		var output_navbar = data.post.title;
+		$('#post-title').html(output_navbar);
 
 		// outputs blog post
 		var output = '<h2>' + data.post.title + '</h2>';
