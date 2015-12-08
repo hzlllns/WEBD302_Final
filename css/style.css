@@ -101,16 +101,49 @@ section {
   text-align: center;
 }
 
+
+/* ---- ADDRESS ---- */
 #address {
 	background-color: #225398;
 	color: #fff;
 	text-shadow:0;
 	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#address ul li{
+	padding: 5px;
+	text-decoration: none;
+	list-style-type: none;
 }
 
 #googleMap {
-	margin: 0;
-	padding:0;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+/* ---- FORM ---- */
+
+.breaker {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+
+}
+
+.required {
+	color: red;
+}
+
+.formSection {
+	background-color: #E3E3E3;
+	width: 100%;
+	padding: 10px;
 }
 
 /* ---- WEEKLY LOG ---- */
