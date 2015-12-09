@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+<link rel="canonical"
+  href="https://dev.twitter.com/web/tweet-button">
 </head>
 
 <body>
@@ -28,6 +30,12 @@
 			<img src="images/z2s_logo.png" alt="View Source Logo">
 			<h3>Where youth will discover their personal brand, develop entrepreneurial skills and ignite a passion for technology to work in tomorrow's economy.</h3>
 			
+			<!-- BUTTONS -->
+			
+			<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="Jupit3r_" data-size="large" data-hashtags="ZeroToStartup">Tweet</a>
+
+			<br/>
+
 			<a href="#apply" data-rel="back" class="back-btn ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-arrow-r ui-btn-icon-right">Apply Now</a>
 
 			<div id="address">
@@ -42,7 +50,7 @@
 			</div>
 
 			<!-- GOOGLE MAPS -->
-			<div id="googleMap"></div></div>
+			<div id="googleMap" style="width:200px;height:80px;"></div>
 			
 		</div>
 		
@@ -153,8 +161,6 @@
 
 					<label for="third">Why do you want to be a part of this program?<span class="required">*</span></label>
 					<textarea name="third" id="third"></textarea>
-
-
 				</div>
 				<div class="breaker"></div><!-- /.breaker -->
 
@@ -181,6 +187,7 @@
 			</div>
 		</div>
 	</section><!-- /APPLY -->
+
 
 
 	<!-- WEEKLY LOG -->
@@ -228,6 +235,7 @@
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/script.js"></script>
 	<script src="http://hzl.ca/webd301_a3/category/weekly-log/?json=1&callback=callback=listPosts"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	
 	
 </body>
